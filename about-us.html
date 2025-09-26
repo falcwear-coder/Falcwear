@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>FΛLC | Contact Us</title>
+<title>FΛLC | About Us</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap');
-@import url('  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ');
+@import url('   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css   ');
 
 * {
 margin: 0;
@@ -54,7 +54,7 @@ text-shadow: 0 0 10px rgba(0,0,0,0.1);
 .nav-links {
 display: flex;
 gap: 40px;
-margin-left: 80px;
+margin-left: 80px; /* Increased spacing between logo and navigation */
 }
 
 .nav-links a {
@@ -131,7 +131,7 @@ cursor: pointer;
 .profile-icon {
 margin-left: 20px;
 cursor: pointer;
-color: #000;
+color: #000; /* Explicitly set to black */
 transition: all 0.3s ease;
 }
 
@@ -282,124 +282,41 @@ text-align: center;
 color: rgba(0, 0, 0, 0.5);
 }
 
-/* Contact Section */
-.contact-section {
-background-color: #fff;
-padding: 30px 5%;
-color: #000;
-}
-
-.contact-container {
-max-width: 1200px;
+/* About Us Section */
+.about-us {
+padding: 10px 5% 20px;
+max-width: 800px;
 margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 80px;
 }
 
-.contact-info {
+.logo-image {
+display: block;
+width: 100px;
+height: 100px;
+margin: 0 auto 8px;
+object-fit: contain;
+}
+
+.about-title {
+font-size: 3.5rem;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 4px;
+text-align: center;
+margin-bottom: 20px;
+line-height: 1;
+text-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-content {
+font-size: 1.2rem;
+line-height: 1.8;
+color: rgba(0, 0, 0, 0.7);
 text-align: center;
 }
 
-.contact-info h2 {
-font-size: 2.5rem;
-font-weight: 800;
-text-transform: uppercase;
-letter-spacing: 2px;
+.about-content p {
 margin-bottom: 30px;
-}
-
-.contact-info p {
-font-size: 1.1rem;
-line-height: 1.6;
-margin-bottom: 30px;
-}
-
-.contact-details {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 25px; /* Increased spacing between details */
-}
-
-.detail {
-display: flex;
-align-items: center;
-gap: 15px;
-width: 100%;
-text-align: left;
-}
-
-.detail i {
-font-size: 1.2rem;
-color: #000;
-min-width: 24px;
-}
-
-.contact-form {
-display: flex;
-flex-direction: column;
-gap: 20px;
-}
-
-.form-group {
-display: flex;
-flex-direction: column;
-gap: 8px;
-}
-
-.form-group label {
-font-weight: 500;
-font-size: 0.95rem;
-text-transform: uppercase;
-letter-spacing: 1px;
-color: rgba(0, 0, 0, 0.7);
-}
-
-.form-group input,
-.form-group textarea {
-width: 100%;
-padding: 15px;
-background-color: rgba(255, 255, 255, 0.7);
-border: 1px solid rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-color: #000;
-font-size: 1rem;
-transition: all 0.3s ease;
-font-family: 'Space Grotesk', sans-serif;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-border-color: #000;
-outline: none;
-background-color: white;
-}
-
-.char-counter {
-text-align: right;
-font-size: 0.85rem;
-color: rgba(0, 0, 0, 0.5);
-margin-top: 5px;
-}
-
-.submit-btn {
-padding: 15px 40px;
-background: #000;
-color: white;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 1px;
-border: none;
-border-radius: 0;
-cursor: pointer;
-transition: all 0.3s ease;
-width: fit-content;
-}
-
-.submit-btn:hover {
-background: rgba(0, 0, 0, 0.8);
-transform: translateY(-2px);
 }
 
 /* Footer */
@@ -481,16 +398,12 @@ margin-top: 40px;
 }
 
 @media (max-width: 992px) {
-.contact-container {
-grid-template-columns: 1fr;
+.about-title {
+font-size: 2.5rem;
 }
 
-.contact-info {
-order: 2;
-}
-
-.contact-form {
-order: 1;
+.about-content {
+font-size: 1.1rem;
 }
 
 .nav-links {
@@ -513,8 +426,8 @@ width: 96%;
 <div class="nav-links">
 <a href="index.html" id="home-link">Home</a>
 <a href="collections.html">Collections</a>
-<a href="about-us.html">About Us</a>
-<a href="Contact Us Page.html" class="active">Contact Us</a>
+<a href="about-us.html" class="active">About Us</a>
+<a href="Contact Us Page.html">Contact Us</a>
 </div>
 
 <div class="search-bar">
@@ -522,7 +435,7 @@ width: 96%;
 <input type="text" id="search-input" placeholder="Search products...">
 </div>
 
-<!-- Profile Icon -->
+<!-- New Profile Icon -->
 <a href="signup.html" class="profile-icon">
 <i class="fas fa-user"></i>
 </a>
@@ -548,46 +461,14 @@ width: 96%;
 </div>
 </div> </div>
 
-<!-- Contact Section -->
-<section class="contact-section">
-<div class="contact-container">
-<div class="contact-info">
-<h2>Contact US</h2>
-<p>Have questions? We're here to help! Send a message.</p>
-<div class="contact-details">
-<div class="detail">
-</div>
-<div class="detail">
-<i class="fas fa-phone-alt"></i>
-<span>+1 (555) 123-4567</span>
-</div>
-<div class="detail">
-<i class="fas fa-envelope"></i>
-<span>hello@falcclothing.com</span>
-</div>
-</div>
-</div>
+<!-- About Us Content -->
+<section class="about-us">
+<img src="images/images/product-2.jpg" alt="FΛLC Logo" class="logo-image">
+<h1 class="about-title">About FΛLC</h1>
+<div class="about-content">
+<p>FΛLC is more than a clothing brand — it's a movement. Built on the values of strength, ambition, and resilience, FΛLC embodies the spirit of those who rise above limits. Our collections blend luxury design with modern sport-inspired aesthetics, delivering timeless pieces that move with you.</p>
 
-<div class="contact-form">
-<div class="form-group">
-<label for="name">Name</label>
-<input type="text" id="name" required>
-</div>
-<div class="form-group">
-<label for="email">Email</label>
-<input type="email" id="email" required>
-</div>
-<div class="form-group">
-<label for="subject">Subject</label>
-<input type="text" id="subject">
-</div>
-<div class="form-group">
-<label for="message">Message</label>
-<textarea id="message" rows="6" maxlength="750"></textarea>
-<div class="char-counter"><span id="char-count">0</span>/750</div>
-</div>
-<button class="submit-btn">Send Message</button>
-</div>
+<p>Every item is crafted with precision, engineered for comfort, and designed to inspire confidence. Whether on the streets, in motion, or at rest, FΛLC is engineered to rise — just like you.</p>
 </div> </section>
 
 <!-- Footer -->
@@ -607,7 +488,7 @@ width: 96%;
 <div class="footer-heading">About</div>
 <div class="footer-links">
 <ul>
-<li><a href="about-us.html">About Us</a></li>
+<li><a href="about-us.html" class="active">About Us</a></li>
 <li><a href="Privacy Policy.html">Privacy Policy</a></li>
 <li><a href="Terms Of Use Page.html">Terms of Service</a></li>
 </ul>
@@ -770,45 +651,6 @@ alert('Proceeding to checkout...');
 renderCartItems();
 }
 
-// Initialize contact form functionality
-function initContactForm() {
-const messageInput = document.getElementById('message');
-const charCount = document.getElementById('char-count');
-
-if (messageInput && charCount) {
-// Update character count on input
-messageInput.addEventListener('input', function() {
-const currentLength = this.value.length;
-charCount.textContent = currentLength;
-
-// Optional: Add visual feedback when approaching limit
-if (currentLength > 700) {
-charCount.style.color = '#000';
-} else {
-charCount.style.color = 'rgba(0, 0, 0, 0.5)';
-}
-});
-
-// Initialize with current count
-charCount.textContent = messageInput.value.length;
-
-// Form submission
-document.querySelector('.submit-btn').addEventListener('click', function(e) {
-const name = document.getElementById('name').value;
-const email = document.getElementById('email').value;
-
-if (!name || !email) {
-alert('Please fill in your name and email');
-e.preventDefault();
-return;
-}
-
-// In a real implementation, this would submit the form
-alert('Thank you for your message! We will get back to you soon.');
-});
-}
-}
-
 // Initialize when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 // Initialize search
@@ -816,9 +658,6 @@ initSearch();
 
 // Initialize cart functionality
 initCart();
-
-// Initialize contact form
-initContactForm();
 });
 </script>
 </body>
